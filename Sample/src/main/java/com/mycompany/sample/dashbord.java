@@ -21,7 +21,7 @@ public class dashbord extends javax.swing.JFrame {
     public dashbord() {
         initComponents();
          conn = MsConnectAccess.conn();
-          Refresh();
+          //Refresh();
     }
 
     /**
@@ -256,13 +256,16 @@ if (answer == JOptionPane.YES_OPTION){
         if (result > 0){
             Refresh();
             JOptionPane.showMessageDialog(null, "product deleted sucessfully!");
-            Clear();
-            else {
+            //Clear();
+            
+}
+else {
                 JOptionPane.showMessageDialog(null, "product not found!");    
                     }
         }
         catch (SQLException e) {JOptionPane.showMessageDialog(null, e);}    
     }
+
 }
 // TODO add your handling code here:
         
